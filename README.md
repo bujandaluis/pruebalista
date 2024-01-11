@@ -40,7 +40,10 @@ y despues se indica a que dispositivo quieres inicar, presionando i para ios o l
 El codigo fuente esta en /src
 
 /api -- contiene la conexion con la api
+
 /components -- contiene los componentes que se usaron
+
 /models -- contiene el modelo que se usa en los screenn
+
 /screen -- contiene las pantallas que vera el cliente con sus archivos de estilos y viewmodel separado del view.
 
