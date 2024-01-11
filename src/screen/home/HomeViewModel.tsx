@@ -1,12 +1,9 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { MobileApi } from '../../api/MobileApi';
-
 import { MobileModel } from "../../models/MobileModel";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-
  const HomeViewModel = () => {
-    //const [mobiles, setMobiles] = useState([]);
     const [mobiles, setMobiles] = useState<MobileModel[]>();
 
     useEffect(() => {
@@ -20,14 +17,10 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
       const onRefresh = useCallback(async () => {
         setRefreshing(true);
         
-        await AsyncStorage.clear();
+        //await AsyncStorage.clear();
         await loadMobile();
     
         setRefreshing(false);
-    
-        // setTimeout(() => {
-        //   setRefreshing(false);
-        // }, 2000);
       }, []);
 
     const loadMobile = async () => {
@@ -65,9 +58,6 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
             }
         }
         setMobiles(mobilesArray);
-
-       
-
         await AsyncStorage.setItem("DataAPI", JSON.stringify(mobilesArray));
 
         

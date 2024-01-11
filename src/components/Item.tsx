@@ -11,16 +11,10 @@ import { useRef, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import moment from 'moment';
 
-//const Item = ({data}: {data: MobileModel}) => {
-  interface Props{
-    data: MobileModel
-    loadMobile: () => void
-}
   const Item = ({
     data,
     loadMobile,
-}: Props) => {
- 
+}: any) => {
 
   const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
 
@@ -69,6 +63,15 @@ import moment from 'moment';
             return "yesterday";
         default:
           return new Date(prevDate).toString();
+
+          // case diff < month:
+          //       return Math.round(diff / day) + ' days ago';
+          //   case diff < year:
+          //       return Math.round(diff / month) + ' months ago';
+          //   case diff > year:
+          //       return Math.round(diff / year) + ' years ago';
+          //   default:
+          //       return "";
     }
 };
 
