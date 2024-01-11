@@ -13,24 +13,24 @@ Este proyecto usa React Native. Primero se debe entrar a la carpeta '/pruebalist
  npm install
  ```
 
-Para iniciar el proyecto. Se debe tener adicionalmente un dispositivo (fisico o virtual), y para iniciar por comando la app. Se debe realizar lo siguiente:
+Para iniciar el proyecto. Se debe tener adicionalmente un dispositivo (fisico o virtual) abierto, para iniciar por comando la app. Se debe realizar lo siguiente:
 
 Para ejecutar en Android:
 
 ```bash
-expo start --android
+npm run android
 ```
 
 Para ejecutar en IOS
 
 ```bash
-expo start --ios
+npm run ios
 ```
 
 Otra opcion seria ejecutar el comando:
 
 ```bash
-expo start
+npm run start
 ```
 y despues se indica a que dispositivo quieres inicar, presionando i para ios o la a para android
 
