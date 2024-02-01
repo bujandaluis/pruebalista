@@ -19,6 +19,20 @@ const HomeStyles = StyleSheet.create({
     justifyContent: 'center',
   },
 
+  touchableOpacity:{
+    backgroundColor: "red",
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius:10,
+    marginRight:16,
+    marginVertical: 8
+  },
+  text1:{
+    color:'white', 
+    fontSize: 14, 
+    fontWeight:'bold'
+  }
+
   
   });
   

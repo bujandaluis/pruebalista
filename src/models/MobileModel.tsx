@@ -1,9 +1,7 @@
 export interface MobileModel {
     objectID: string;
-    story_title: string;
+    storyTitle: string;
     author: string;
-    created_at: Date;
-    story_url: string;
-    
-    
+    createdAt: Date;
+    storyUrl: string;
 }

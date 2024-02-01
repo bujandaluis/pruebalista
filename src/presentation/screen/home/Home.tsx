@@ -8,7 +8,7 @@ import Item from '../../components/Item'
 
 export const HomeScreen = () => {
 
-  const { mobiles,onRefresh,refreshing, loadMobile } = useViewModel();
+  const { mobiles,onRefresh,refreshing, goToDetail, RightActions, timeAgo } = useViewModel();
 
    return(
       <SafeAreaView>
@@ -17,7 +17,7 @@ export const HomeScreen = () => {
         numColumns={1}
         showsVerticalScrollIndicator={false}
         keyExtractor={(mob) => String(mob.objectID)}
-        renderItem={({item}) => <Item data={item} loadMobile={loadMobile} />}
+        renderItem={({item}) => <Item data={item} goToDetail={goToDetail} RightActions={RightActions} timeAgo={timeAgo} />}
         refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} />}
         />
       </SafeAreaView>

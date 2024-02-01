@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import { HomeScreen } from './src/screen/home/Home';
+import { HomeScreen } from './src/presentation/screen/home/Home';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
- import { DetailScreen } from './src/screen/detail/Detail';
-import { MobileModel } from './src/models/MobileModel';
+ import { DetailScreen } from './src/presentation/screen/detail/Detail';
+import { MobileModel } from './src/models/mobileModel';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 const Stack = createNativeStackNavigator();
